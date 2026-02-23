@@ -62,3 +62,14 @@ initial begin
 	$display("Copied last %0d elements from old array\nIntda = %p, Size = %0d",l , intda, intda.size());
 end
 endmodule
+
+
+
+/*
+#run script to run the code in the ModelSim Tool
+
+vlib work
+vlog dynamic_array.sv
+vsim top
+run -all
+*/
