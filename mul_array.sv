@@ -1,7 +1,7 @@
 module top;
 	reg [3:0][4:0] mul_arr[5:0][2:0];
 	initial begin
-		foreach(mul_arr[i][j][k])                  // Using foreach to assign values
+		foreach(mul_arr[i,j,k])                  // Using foreach to assign values
 			mul_arr[i][j][k] = i+j+k;  
 		/*for(int i=0; i<6; i++)                   // Using nested for loop to assign values
 			for (int j=0; j<3; j++)
@@ -18,6 +18,7 @@ vlog mul_array.sv
 vsim top
 run -all
 */
+
 
 
 
