@@ -1,13 +1,10 @@
 module top;
-reg [3:0][4;0] mul_arr[5:0][2:0];
+	reg [3:0][4:0] mul_arr[5:0][2:0];
 	initial begin
 		for(int i=0; i<6; i++)
 			for (int j=0; j<3; j++)
 				for (int k=0; k<4; k++)
 					mul_arr[i][j][k] = i+j+k; // assigning a value(random)
-				end
-			end
-		end
 		$display("Mul_arr = %p", mul_arr);
 	end
 endmodule
@@ -19,3 +16,4 @@ vlog mul_array.sv
 vsim top
 run -all
 */
+
