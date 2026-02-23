@@ -42,7 +42,7 @@ initial begin
 	intda = new[len-1](intda1);
 	$display("Deleted %0d at index = %0d\nIntda = %p, Size = %0d",y, x, intda, intda.size());
 	
-	//Reverse elements of the array
+	//Reverse the elements of the array
 	len = intda.size();
 	intda1 = new[len];
 	for(int i=0; i<len; i++) begin:Reversing         // intda.reverse(); // a built in method available
@@ -51,7 +51,7 @@ initial begin
 	intda = new[len](intda1);
 	$display("Reversed dynamic array\nIntda = %p, Size = %0d", intda, intda.size());
 	
-	// Copying elements from an index to end
+	// Copying elements from an index till the end
 	len = intda.size();
 	l = 4;
 	intda1 = new[l];
@@ -73,3 +73,4 @@ vlog dynamic_array.sv
 vsim top
 run -all
 */
+
